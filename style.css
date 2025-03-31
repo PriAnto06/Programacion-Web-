@@ -1,0 +1,40 @@
+.contenedor {
+  display: flex;
+  gap: 10px;
+  width: 600px;
+  height: 250px;
+  background-color: blueviolet;
+  border-style: double;
+  border-color: rgb(212, 91, 186);
+  border-radius: 15px;
+}
+.conteiner-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+h1 {
+  font-size: 18px;
+  color: rgb(255, 253, 250);
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+h2 {
+  font-size: 14px;
+  color: rgb(247, 246, 246);
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+span {
+  color: rgb(226, 78, 25);
+}
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+img {
+  border-top-left-radius: 15px;
+  border: bottom left radius 15px;
+}
