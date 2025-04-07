@@ -1,0 +1,36 @@
+.caja {
+  background-color: #063168;
+}
+.caja-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#titulo {
+  font-size: 30px;
+  text-align: center;
+}
+
+.borde {
+  border-style: double;
+  border-color: rgb(128, 193, 253);
+  border-radius: 15px;
+  /*padding es la distancia de los elementos hacia el borde*/
+  /*margin es la distancia de los elementos hacia afuera del borde*/
+  padding: 30px;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+}
+.boton {
+  width: 50px;/*ancho*/
+  height: 50px;/*alto*/
+}
