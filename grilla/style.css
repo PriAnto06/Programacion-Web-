@@ -1,0 +1,49 @@
+body{
+    font-family:sans-serif;
+    padding: 20px;
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F6526642.jpg&f=1&nofb=1&ipt=d6ee927e518b1a5a3b9f400d26db5923ded01a03b6fd0b21de28680a399059b5")
+}
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr)/*300px 300px 300px ;*/; 
+    /*grid-template-columns establece la cantidad de columnas q va a tener la grilla*/
+    grid-auto-rows: auto;
+    /* auto-rows establece automaticamente el tamaño de las filas */
+    gap: 10px; 
+}
+
+.card{
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    height: auto;
+    width: 400px;
+    cursor: pointer;/*cursor pinter cambia el cursor por una mano*/
+}
+.moni{
+    background-color: black;
+}
+
+.pepe{
+    background-color: beige;
+}
+
+.fatiga{
+    background-color: darkgrey;
+}
+
+.card img{
+    width: 50%;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+}
+
+/*media query indica que cuando llegue a ese tamaño o menos las clases que estan dentro de las llaves
+van a ca cambiar a lo q digan */
+@media(max-width: 768px){
+     .grid{
+    grid-template-columns: 1fr;
+     } 
+}
+
+

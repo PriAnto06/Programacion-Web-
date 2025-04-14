@@ -10,6 +10,7 @@
 #titulo {
   font-size: 30px;
   text-align: center;
+
 }
 
 .borde {
@@ -19,18 +20,28 @@
   /*padding es la distancia de los elementos hacia el borde*/
   /*margin es la distancia de los elementos hacia afuera del borde*/
   padding: 30px;
+  background-color: #4881cc;
 }
-
+.caja-contenedor {
+  display: flex;
+  justify-content: center;
+  background-color: #063168;
+}
 .contenedor {
   display: flex;
   justify-content: center;
-}
+  padding-right: 10%;
 
+}
+h1{
+  color: antiquewhite;
+}
 h2 {
   display: flex;
   justify-content: center;
 }
 .boton {
-  width: 50px;/*ancho*/
-  height: 50px;/*alto*/
+  width: 181px; /*ancho*/
+  height: 30px; /*alto*/
+  margin: 10px;
 }
