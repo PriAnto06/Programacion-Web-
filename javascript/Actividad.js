@@ -28,29 +28,27 @@ while (counter <= number) {
 //while
 let suma = 0;
 let numero4 = 1;
-while (numero4 <= 4)
-{
-    suma += numero4;
-    numero4++;
-    console.log(suma)
-} 
+while (numero4 <= 4) {
+  suma += numero4;
+  numero4++;
+  console.log(suma);
+}
 
 //for
 //1
 
-for(let i = 0; i <=4; i++ )
-{
-  console.log(i)
+for (let i = 0; i <= 4; i++) {
+  console.log(i);
 }
 
 //2
- 
+
 let suma2 = 0;
 
-for (let i = 0; i <= 4; i++)
-{
+for (let i = 0; i <= 4; i++) {
   suma2 += i;
-  console.log("La suma de los números del 0 al 4 es:", suma2);  
+  console.log("La suma de los números del 0 al 4 es:", suma2);
 }
 //console.log("La suma de los números del 0 al 4 es:", suma);
+
 
