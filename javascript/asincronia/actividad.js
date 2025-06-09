@@ -1,15 +1,21 @@
 //Actividad 1
 
-const contraseña = "Hola"
-const usuario = "Pri"
+const contraseña = "hola";
+const usuario = "Pri";
 
-function addLogin(){
-    const input = document.getElementById("User")
-    const text = input.value;
-    console.log(text)
+async function addLogin() {
+  const inputUsuario = document.getElementById("usuario").value;
+  const inputContraseña = document.getElementById("contraseña").value;
+  console.log(inputContraseña, inputUsuario);
+
+  if (inputUsuario === usuario && inputContraseña === contraseña) {
+    localStorage.setItem("sesion", true);
+    const Usuarioss = await obtenerUsuarios();
+    console.log(Usuarioss);
+  }
 }
-const value = "Pri"
-localStorage.setItem("Nombre")
-
-
-
+async function obtenerUsuarios() {
+  let response = await fetch("https://jsonplaceholder.typicode.com/users");
+  let data = await response.json();
+  return data;
+}
