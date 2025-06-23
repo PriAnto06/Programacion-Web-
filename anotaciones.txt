@@ -1,0 +1,76 @@
+siempre los componentes arrancan en mayuscula 
+si los ponemos en minuscula lo toma como variable
+ 
+la nueva extension jsx es javascrip con html
+
+el estado guarda una variable en una memoria
+
+
+Hooks traduccion ganchos nos sirve para manipular informacion.
+userState (es un hook que nos perimite guardar y actualizar los valores de una variable.)
+valor inicial, variable, funcion
+
+useEffect es un hook que  nos permite ejecutar el codigo que esta dentro del una o tantas veces se necesaria.
+para que se actualize tiene q tener dependiencia[]
+
+npm  create vite@latest
+npm install
+npm run dev
+
+map recorre y retorna implicito
+
+
+
+function myFun(){
+    return
+    implicito
+}
+
+?=si
+
+condicion ? "esto" :=sino "esto otro"
+
+import { useEffect, useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+
+
+function App() {
+ const [count, setCount] = useState(0);
+
+
+ // el estado tiene tres partes
+ const [variable, setVariable] = useState("valor inicial");
+
+
+ const [personajes, setPersonajes] = useState([]);//esta definido pero es un array vacio
+
+
+ useEffect(() => {
+   fetch("https://rickandmortyapi.com/api/character")
+     .then((res) => res.json())
+     .then((result) => setPersonajes(result.results));
+ }, []);
+
+
+ return (
+   <>
+     {!personajes ? (
+       <div>cargando...</div>
+     ) : (
+       <ul>
+         {personajes.map((personaje) => (
+           <li>
+             <h3>{personaje.name}</h3>
+             <img src={personaje.image} alt="" />
+           </li>
+         ))}
+       </ul>
+     )}
+   </>
+ );
+}
+
+
+export default App;
