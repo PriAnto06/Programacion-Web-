@@ -2,6 +2,11 @@ import { useEffect, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+import { Contador } from "./components/Actividad 1";
+import { CapturarInput } from "./components/Actividad 2 ";
+import { Montar } from "./components/Actividad 3";
+import { Simular } from "./components/Actividad 4";
+import { Saludo } from "./components/Actividad 5";
 
 
 function App() {
@@ -24,7 +29,13 @@ function App() {
 
  return (
    <>
-     {!personajes ? (
+   <Contador/>
+   <CapturarInput/>
+   <Montar/>
+   <Simular/>
+   <Saludo/>
+
+     {/*!personajes ? (
        <div>cargando...</div>
      ) : (
        <ul>
@@ -35,7 +46,7 @@ function App() {
            </li>
          ))}
        </ul>
-     )}
+     )*/}
    </>
  );
 }
