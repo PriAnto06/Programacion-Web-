@@ -11,7 +11,7 @@ userState (es un hook que nos perimite guardar y actualizar los valores de una v
 valor inicial, variable, funcion
 
 useEffect es un hook que  nos permite ejecutar el codigo que esta dentro del una o tantas veces se necesaria.
-para que se actualize tiene q tener dependiencia[]
+para que se actualize tiene q tener dependiencia son las que esta entre los corchetes[]
 
 npm  create vite@latest
 npm install
