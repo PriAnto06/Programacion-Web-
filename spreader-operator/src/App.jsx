@@ -3,6 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import { Operator } from "./components/operator";
+import { Pedidos } from "./components/ejercicios";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
  return (
    <>
      <Operator />
+     <Pedidos />
    </>
  );
 }

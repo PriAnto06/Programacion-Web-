@@ -29,6 +29,7 @@ export function Operator() {
      <h3>Spread Operator</h3>
      <button onClick={addNums}>agregar numeros</button>
      <button onClick={updateName}>modificar persona</button>
+     
    </>
  );
 }
