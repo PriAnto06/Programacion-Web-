@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import { Operator } from "./components/operator";
-import { Pedidos } from "./components/ejercicios";
+import  {Operator } from "./components/Operator";
+import { Pedidos } from "./components/Ejercicios";
 
 
 function App() {

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Pedidos } from "./Ejercicios";
 
 
 export function Operator() {
@@ -20,6 +21,10 @@ export function Operator() {
    console.log(persona);
  };
 
+ const productos = [
+  { nombre: "Camiseta", precio: 20 },
+  { nombre: "Pantalón", precio: 30 },
+];
 
  return (
    <>
@@ -29,7 +34,8 @@ export function Operator() {
      <h3>Spread Operator</h3>
      <button onClick={addNums}>agregar numeros</button>
      <button onClick={updateName}>modificar persona</button>
-     
+     <button onClick={() => Pedidos(productos)}>Descuento</button>
+
    </>
  );
 }
