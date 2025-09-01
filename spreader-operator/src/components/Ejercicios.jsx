@@ -35,7 +35,7 @@ export function Pedidos() {
     <>
       <h4>productos con descuento</h4>
       {productosConDescuento.map((producto, index) => (
-        <p key={index}>{producto.nombre}</p>
+        <p key={index}>{producto.nombre} - {String(producto.descuento)}- {producto.precio} </p>
       ))}
     </>
   );
